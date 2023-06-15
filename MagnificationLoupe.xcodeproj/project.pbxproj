@@ -11,6 +11,8 @@
 		F73E88182A3B8B0F00617F46 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73E88172A3B8B0F00617F46 /* ContentView.swift */; };
 		F73E881A2A3B8B0F00617F46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F73E88192A3B8B0F00617F46 /* Assets.xcassets */; };
 		F73E881D2A3B8B0F00617F46 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F73E881C2A3B8B0F00617F46 /* Preview Assets.xcassets */; };
+		F73E88252A3B8B2B00617F46 /* Wave in Frameworks */ = {isa = PBXBuildFile; productRef = F73E88242A3B8B2B00617F46 /* Wave */; };
+		F73E88272A3B8B4600617F46 /* MagnificationLoupe.metal in Sources */ = {isa = PBXBuildFile; fileRef = F73E88262A3B8B4600617F46 /* MagnificationLoupe.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		F73E88172A3B8B0F00617F46 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F73E88192A3B8B0F00617F46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F73E881C2A3B8B0F00617F46 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F73E88262A3B8B4600617F46 /* MagnificationLoupe.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = MagnificationLoupe.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F73E88252A3B8B2B00617F46 /* Wave in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +57,7 @@
 			children = (
 				F73E88152A3B8B0F00617F46 /* MagnificationLoupeApp.swift */,
 				F73E88172A3B8B0F00617F46 /* ContentView.swift */,
+				F73E88262A3B8B4600617F46 /* MagnificationLoupe.metal */,
 				F73E88192A3B8B0F00617F46 /* Assets.xcassets */,
 				F73E881B2A3B8B0F00617F46 /* Preview Content */,
 			);
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = MagnificationLoupe;
+			packageProductDependencies = (
+				F73E88242A3B8B2B00617F46 /* Wave */,
+			);
 			productName = MagnificationLoupe;
 			productReference = F73E88122A3B8B0F00617F46 /* MagnificationLoupe.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = F73E88092A3B8B0F00617F46;
+			packageReferences = (
+				F73E88232A3B8B2B00617F46 /* XCRemoteSwiftPackageReference "Wave" */,
+			);
 			productRefGroup = F73E88132A3B8B0F00617F46 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F73E88272A3B8B4600617F46 /* MagnificationLoupe.metal in Sources */,
 				F73E88182A3B8B0F00617F46 /* ContentView.swift in Sources */,
 				F73E88162A3B8B0F00617F46 /* MagnificationLoupeApp.swift in Sources */,
 			);
@@ -344,6 +356,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F73E88232A3B8B2B00617F46 /* XCRemoteSwiftPackageReference "Wave" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jtrivedi/Wave";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F73E88242A3B8B2B00617F46 /* Wave */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F73E88232A3B8B2B00617F46 /* XCRemoteSwiftPackageReference "Wave" */;
+			productName = Wave;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F73E880A2A3B8B0F00617F46 /* Project object */;
 }
